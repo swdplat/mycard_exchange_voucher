@@ -4,6 +4,7 @@
     font-weight: 600;
     color: #006699;
     line-height: normal;
+    white-space: nowrap;
 }
 
 .item-text{
@@ -123,7 +124,6 @@ body{
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
-    white-space: nowrap;
 }
 
 .exchange_ambit{
