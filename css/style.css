@@ -1,0 +1,217 @@
+/* 文字樣式設定 開始*/
+.headline{
+    font-size: 20px;
+    font-weight: 600;
+    color: #006699;
+    line-height: normal;
+}
+
+.item-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    line-height: normal;
+    align-self: end;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    line-height: normal;
+}
+/* 文字樣式設定 結束*/
+
+
+
+
+/* 頁面樣式設定 開始 */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #006699;
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.barcode_outer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.barcode{
+    width: 60%;
+    max-width: 560px;
+    min-width: 355px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #fa8072;
+    border: 10px solid #ffe0a7;
+}
+
+.barcode_info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barcode_info::before{
+    content: '';
+    background-color: #006699;
+    height: 50px;
+    width: 50px;
+    top: 295px;
+    position: absolute;
+    left: -30px;
+    border-radius: 50px;
+}
+
+.barcode_info::after{
+    content: '';
+    background-color: #006699;
+    height: 50px;
+    width: 50px;
+    top: 295px;
+    position: absolute;
+    right: -30px;
+    border-radius: 50px;
+}
+
+.info_logo{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.top_title{
+    height: 100%;
+    align-content: end;
+}
+
+.item-text h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    line-height: normal;
+    align-self: end;
+}
+
+.exchange_prize{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.exchange_deadline{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.exchange_ambit{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.barcode_reader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.barcode_image_outer{
+    width: 100%;
+    text-align: center;
+}
+
+.barcode_image{
+    width: 80%;
+}
+
+.qrcode_image_outer{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.qrcode_image{
+    width: 60%;
+}
+
+
+.instruction{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.instruction_desc{
+    margin-bottom: 10px;
+}
+
+.instruction_note{
+    margin-bottom: 10px;
+}
+
+/* 兌換券虛線樣式 */
+.line_dashed{
+    width: 90%;
+    border-bottom: 3px dashed #594036;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* 條碼切換樣式 */
+.barcode_reader .change_icon{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.barcode_reader .icon_first{
+    max-width: 30px;
+}
+
+.icon_first img{
+    width: 100%;
+}
+
+.change_divid{
+    border: 1px solid #3e3e3e;
+    height: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.barcode_reader .icon_second{
+    max-width: 30px;
+}
+
+.icon_second img{
+    width: 80%;
+}
+/* 頁面樣式設定 結束 */

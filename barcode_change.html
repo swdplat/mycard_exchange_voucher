@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兌換券</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+   <!-- jquery引入檔 -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="barcode_outer">
+            <div class="barcode">
+                <!-- 填入活動名稱、兌換項目、兌換期限、退換範圍 -->
+                <div class="barcode_info">
+                    <div class="info_logo">
+                        <div class="company_logo">
+                            <img src="./image/mycard-logo.png" alt="">
+                        </div>
+                        <div class="item-text top_title">
+                            <h1>兌換券</h1>
+                        </div>
+                    </div>
+                    <div class="exchange_prize">
+                        <div class="headline">兌換品項</div>
+                        <div class="item-text">茶葉蛋</div>
+                    </div>
+                    <div class="exchange_deadline">
+                        <div class="headline">兌換期限</div>
+                        <div class="item-text">2025/12/01 ~ 2026/06/30</div>
+                    </div>
+                    <div class="exchange_ambit">
+                        <div class="headline">兌換範圍</div>
+                        <div class="item-text">全臺美廉社適用</div>
+                    </div>
+                </div>
+
+                <!-- 兌換券虛線樣式 -->
+                <div class="line_dashed"></div>
+
+                <!-- 放置條碼或QRcode，並讓兩者可以做切換 -->
+                <div class="barcode_reader">
+                    <div class="change_icon">
+                        <div class="icon_first">
+                            <a href="" class="barcode_play">
+                                <img src="./image/bar-code.png" alt="">
+                            </a>
+                        </div>
+                        <div class="change_divid"></div>
+                        <div class="icon_second">
+                            <a href="" class="qrcode_play">
+                                <img src="./image/qr-code.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="barcode_image_outer">
+                        <img class="barcode_image" src="./image/barcode_change.png" alt="barcode">
+                    </div>
+                    <div class="qrcode_image_outer">
+                        <img class="qrcode_image" src="./image/qrcode.png" alt="barcode">
+                    </div>
+                </div>
+
+                <!-- 填入使用說明、注意事項 -->
+                <div class="instruction">
+                    <div class="instruction_desc">
+                        <div class="headline">使用說明</div>
+                        <div class="text">於兌換券有效使用期限內使用，本券限兌換一次，一經兌換後即無法使用。</div>
+                    </div>
+                    <div class="instruction_note">
+                        <div class="headline">注意事項</div>
+                        <div class="text">
+                            1.此為街頭玩家見面會之活動。<br/>
+                            2.折價券不可折抵之金額、品項，包含菸、點數卡、報紙、周刊雜誌、縣市專用垃圾袋、代收代付、申辦會員卡費、美廉社線上購物Go美廉、大宗購物、預購團購(線上付款之金額)。<br/>
+                            3.兌換前先出示此券，單次限使用一張，且兌換券僅能使用一次，一經使用即失效。 <br/>
+                            4.本券僅能於兌換期限內至「美廉社」使用，逾期無效。<br/>
+                            以上活動本公司保有活動解釋、修改、調整、終止之權利。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+     $(document).ready(function() {
+    // 點擊 Barcode 圖示
+    $('.bacode_play').on('click', function(e) {
+        e.preventDefault(); // 強力阻止預設行為
+        e.stopPropagation(); // 阻止事件冒泡
+
+        // stop(true, true) 會清除動畫佇列並立即完成當前動畫，防止閃爍
+        $('.qrcode_image_outer').hide();
+        $('.barcode_image_outer').stop(true, true).fadeIn();
+    });
+
+    // 點擊 QRcode 圖示
+    $('.qrcode_play').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('.barcode_image_outer').hide();
+        $('.qrcode_image_outer').stop(true, true).fadeIn();
+    });
+});
+    </script>
+</body>
+</html>
