@@ -218,7 +218,7 @@ body{
 /* 條碼切換樣式 結束*/
 
 /* RWD樣式 開始*/
-@media(max-width:576px){
+@media(max-width:690px){
     body{
     margin: 0;
     padding: 0;
