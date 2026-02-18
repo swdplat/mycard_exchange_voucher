@@ -24,9 +24,6 @@
 }
 /* 文字樣式設定 結束*/
 
-
-
-
 /* 頁面樣式設定 開始 */
 body{
     margin: 0;
@@ -70,28 +67,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.barcode_info::before{
-    content: '';
-    background-color: #006699;
-    height: 50px;
-    width: 50px;
-    top: 295px;
-    position: absolute;
-    left: -30px;
-    border-radius: 50px;
-}
-
-.barcode_info::after{
-    content: '';
-    background-color: #006699;
-    height: 50px;
-    width: 50px;
-    top: 295px;
-    position: absolute;
-    right: -30px;
-    border-radius: 50px;
 }
 
 .info_logo{
@@ -202,7 +177,6 @@ body{
 }
 
 .change_divid{
-    border: 1px solid #3e3e3e;
     height: 60%;
     margin-left: 10px;
     margin-right: 10px;
@@ -215,7 +189,25 @@ body{
 .icon_second img{
     width: 80%;
 }
+
+/* 藍色外框樣式 */
+.change_icon a.active {
+    outline: 2px solid #258eff; 
+    padding: 2px;
+    border-radius: 2px;       
+    display: inline-block;      
+    justify-items: center;
+}
+
+/* 讓圖片在連結內正常顯示 */
+.change_icon img {
+    display: block;
+    width: 30px; 
+    height: auto;
+}
 /* 條碼切換樣式 結束*/
+
+
 
 /* RWD樣式 開始*/
 @media(max-width:690px){
@@ -263,28 +255,6 @@ body{
     justify-content: center;
 }
 
-.barcode_info::before{
-    content: '';
-    background-color: #006699;
-    height: 50px;
-    width: 50px;
-    top: 310px;
-    position: absolute;
-    left: -30px;
-    border-radius: 50px;
-}
-
-.barcode_info::after{
-    content: '';
-    background-color: #006699;
-    height: 50px;
-    width: 50px;
-    top: 310px;
-    position: absolute;
-    right: -30px;
-    border-radius: 50px;
-}
-
 .info_logo{
     margin-bottom: 25px;
     display: flex;
@@ -393,7 +363,6 @@ body{
 }
 
 .change_divid{
-    border: 1px solid #3e3e3e;
     height: 60%;
     margin-left: 10px;
     margin-right: 10px;

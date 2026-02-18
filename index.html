@@ -45,13 +45,13 @@
                 <div class="barcode_reader">
                     <div class="change_icon">
                         <div class="icon_first">
-                            <a href="" class="barcode_play">
+                            <a href="" class="barcode_play change_one">
                                 <img src="./image/bar-code.png" alt="">
                             </a>
                         </div>
                         <div class="change_divid"></div>
                         <div class="icon_second">
-                            <a href="" class="qrcode_play">
+                            <a href="" class="qrcode_play  change_two">
                                 <img src="./image/qr-code.png" alt="">
                             </a>
                         </div>
@@ -104,6 +104,19 @@
 
         $('.barcode_image_outer').hide();
         $('.qrcode_image_outer').stop(true, true).fadeIn();
+    });
+});
+    </script>
+
+    <script>
+        $(document).ready(function() {
+    $('.change_one').addClass('active');
+
+    $('.change_icon a').on('click', function(e) {
+
+        $('.change_icon a').removeClass('active');
+
+        $(this).addClass('active');
     });
 });
     </script>
