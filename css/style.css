@@ -344,7 +344,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .instruction_desc{
