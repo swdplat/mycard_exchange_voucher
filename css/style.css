@@ -76,6 +76,15 @@ body{
     white-space: nowrap;
 }
 
+.company_logo{
+    max-width: 200px;
+}
+
+.company_logo img{
+    width: 100%;
+    max-width: 200px;
+}
+
 .top_title{
     height: 100%;
     align-content: end;
