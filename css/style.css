@@ -87,7 +87,9 @@ body{
 
 .top_title{
     height: 100%;
-    align-content: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .item-text h1{
@@ -282,7 +284,9 @@ body{
 
 .top_title{
     height: 100%;
-    align-content: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .item-text h1{
