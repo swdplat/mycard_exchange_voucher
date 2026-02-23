@@ -204,8 +204,8 @@ body{
     outline: 2px solid #258eff; 
     padding: 2px;
     border-radius: 2px;       
-    display: inline-block;      
-    justify-items: center;
+    display: flex;      
+    justify-content: center;
 }
 
 /* 讓圖片在連結內正常顯示 */
