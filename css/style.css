@@ -234,7 +234,7 @@ body{
 .barcode{
     width: 60%;
     max-width: 560px;
-    min-width: 355px;
+    min-width: 320px;
     height: auto;
     display: flex;
     flex-direction: column;
