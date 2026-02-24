@@ -1,6 +1,6 @@
 /* 文字樣式設定 開始*/
 .headline{
-    font-size: 20px;
+    font-size: 38px;
     font-weight: 600;
     color: #006699;
     line-height: normal;
@@ -8,15 +8,15 @@
 }
 
 .item-text{
-    font-size: 20px;
+    font-size: 38px;
     font-weight: 600;
     color: #000;
     line-height: normal;
-    align-self: end;
+    align-self: center;
 }
 
 .text{
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 500;
     color: #000;
     text-align: justify;
@@ -29,7 +29,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #2d64c0;
+    /* background-color: #2d64c0; */
+
+    background-image: url(../image/voucher_bg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main{
@@ -43,11 +48,12 @@ body{
     justify-content: center;
     padding-bottom: 50px;
     padding-top: 50px;
+    position: relative;
 }
 
 .barcode{
     width: 60%;
-    max-width: 500px;
+    max-width: 870px;
     min-width: 355px;
     height: auto;
     display: flex;
@@ -58,9 +64,35 @@ body{
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: #fa8072;
-    border: 10px solid #ffe0a7;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
+
+.barcode::before{
+    content: "";
+    background-image: url(../image/tickets_top.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: -80px;
+}
+
+.barcode::after{
+    content: "";
+    background-image: url(../image/tickets_under.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: -80px;
+}
+
 
 .barcode_info{
     width: 70%;
@@ -69,31 +101,48 @@ body{
     justify-content: center;
 }
 
+.barcode_info::before{
+    content: "";
+    background-image: url(../image/travel-1.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 330px;
+    width: 250px;
+    position: absolute;
+    left: -190px;
+    transform: rotate(-40deg);
+    z-index: -1;
+}
+
 .info_logo{
     margin-bottom: 25px;
     display: flex;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     white-space: nowrap;
 }
 
 .company_logo{
-    max-width: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .company_logo img{
     width: 100%;
-    max-width: 200px;
+    max-width: 350px;
 }
 
 .top_title{
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
 }
 
 .item-text h1{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     color: #000;
     line-height: normal;
@@ -154,6 +203,20 @@ body{
     margin-bottom: 50px;
 }
 
+.instruction::after{
+    content: "";
+    background-image: url(../image/travel-2.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 345px;
+    width: 300px;
+    position: absolute;
+    right: -183px;
+    transform: rotate(50deg);
+    z-index: -1;
+}
+
 .instruction_desc{
     margin-bottom: 10px;
 }
@@ -165,7 +228,7 @@ body{
 /* 兌換券虛線樣式 開始*/
 .line_dashed{
     width: 90%;
-    border-bottom: 3px dashed #594036;
+    border-bottom: 10px dashed #d7d7d7;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -189,8 +252,8 @@ body{
 
 .change_divid{
     height: 60%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .barcode_reader .icon_second{
@@ -203,11 +266,12 @@ body{
 
 /* 藍色外框樣式 */
 .change_icon a.active {
-    outline: 2px solid #258eff; 
+    outline: 2px solid #49c246bf; 
     padding: 2px;
     border-radius: 2px;       
     display: flex;      
     justify-content: center;
+    background-color: #49c246bf;
 }
 
 /* 讓圖片在連結內正常顯示 */
@@ -222,11 +286,43 @@ body{
 
 /* RWD樣式 開始*/
 @media(max-width:690px){
+
+/* 文字樣式設定 開始*/
+.headline{
+    font-size: 20px;
+    font-weight: 600;
+    color: #006699;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.item-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    line-height: normal;
+    align-self: end;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    line-height: normal;
+}
+/* 文字樣式設定 結束*/
+
     body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #2d64c0;
+    /* background-color: #2d64c0; */
+
+    background-image: url(../image/voucher_bg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main{
@@ -240,10 +336,11 @@ body{
     justify-content: center;
     padding-bottom: 50px;
     padding-top: 50px;
+    position: relative;
 }
 
 .barcode{
-    width: 60%;
+    width: 90%;
     max-width: 500px;
     min-width: 320px;
     height: auto;
@@ -255,15 +352,55 @@ body{
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: #fa8072;
-    border: 10px solid #ffe0a7;
+    background-color: #ffffff;
 }
+
+.barcode::before{
+    content: "";
+    background-image: url(../image/tickets_top.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 55px;
+    width: 100%;
+    position: absolute;
+    top: -45px;
+}
+
+.barcode::after{
+    content: "";
+    background-image: url(../image/tickets_under.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 52px;
+    width: 100%;
+    position: absolute;
+    bottom: -45px;
+}
+
 
 .barcode_info{
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.barcode_info::before{
+    content: "";
+    background-image: url(../image/travel-1.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 330px;
+    width: 250px;
+    position: absolute;
+    left: 0px;
+    top: -220px;
+    transform: rotate(15deg);
+    z-index: -1;
+    display: none;
 }
 
 .info_logo{
@@ -274,12 +411,12 @@ body{
 }
 
 .company_logo{
-    max-width: 150px;
+    width: 100%;
 }
 
 .company_logo img{
     width: 100%;
-    max-width: 150px;
+    max-width: 250px;
 }
 
 .top_title{
@@ -287,6 +424,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    align-self: center;
 }
 
 .item-text h1{
@@ -351,6 +489,21 @@ body{
     margin-bottom: 0px;
 }
 
+.instruction::after{
+    content: "";
+    background-image: url(../image/travel-2.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 345px;
+    width: 300px;
+    position: absolute;
+    right: -183px;
+    transform: rotate(50deg);
+    z-index: -1;
+    display: none;
+}
+
 .instruction_desc{
     margin-bottom: 10px;
 }
@@ -362,7 +515,7 @@ body{
 /* 兌換券虛線樣式 開始*/
 .line_dashed{
     width: 90%;
-    border-bottom: 3px dashed #594036;
+    border-bottom: 3px dashed #d7d7d7;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -400,6 +553,5 @@ body{
 /* 條碼切換樣式 結束*/
 }
 /* RWD樣式 結束*/
-
 
 /* 頁面樣式設定 結束 */
