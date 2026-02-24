@@ -209,11 +209,11 @@ body{
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
-    height: 345px;
-    width: 300px;
+    height: 300px;
+    width: 270px;
     position: absolute;
-    right: -183px;
-    transform: rotate(50deg);
+    right: -152px;
+    transform: rotate(40deg);
     z-index: -1;
 }
 
