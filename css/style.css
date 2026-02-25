@@ -303,6 +303,7 @@ body{
     color: #000;
     line-height: normal;
     align-self: end;
+    white-space: nowrap;
 }
 
 .text{
