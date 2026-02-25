@@ -13,6 +13,7 @@
     color: #000;
     line-height: normal;
     align-self: center;
+    overflow-wrap: anywhere;
 }
 
 .text{
