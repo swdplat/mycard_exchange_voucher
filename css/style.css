@@ -55,7 +55,6 @@ body{
 .barcode{
     width: 60%;
     max-width: 870px;
-    min-width: 355px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -303,7 +302,6 @@ body{
     color: #000;
     line-height: normal;
     align-self: end;
-    white-space: nowrap;
 }
 
 .text{
@@ -312,6 +310,10 @@ body{
     color: #000;
     text-align: justify;
     line-height: normal;
+}
+
+.date-nowrap{
+    white-space: nowrap;
 }
 /* 文字樣式設定 結束*/
 
@@ -344,13 +346,12 @@ body{
 .barcode{
     width: 90%;
     max-width: 500px;
-    min-width: 320px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
@@ -443,19 +444,19 @@ body{
 .exchange_prize{
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .exchange_deadline{
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .exchange_ambit{
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .barcode_reader{
@@ -463,7 +464,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .barcode_image_outer{
@@ -518,7 +519,7 @@ body{
     height: 275px;
     width: 220px;
     position: absolute;
-    right: 160px;
+    right: 130px;
     bottom: -280px;
     transform: rotate(0deg);
     z-index: 2;
