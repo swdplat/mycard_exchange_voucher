@@ -535,8 +535,8 @@ body{
 .line_dashed{
     width: 90%;
     border-bottom: 3px dashed #d7d7d7;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 /* 兌換券虛線樣式 結束*/
 
