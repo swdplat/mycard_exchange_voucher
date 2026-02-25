@@ -305,7 +305,7 @@ body{
 }
 
 .title_line{
-    font-size: 38px;
+    font-size: 24px;
     font-weight: 600;
     color: #006699;
     line-height: normal;
@@ -321,7 +321,7 @@ body{
 }
 
 .text{
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
     color: #000;
     text-align: justify;
@@ -337,8 +337,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #2d64c0; */
-
+    
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
     background-image: url(../image/voucher_bg_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -438,7 +439,7 @@ body{
 
 .company_logo img{
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .top_title{
@@ -604,7 +605,7 @@ body{
 }
 
 .title_line{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
     color: #006699;
     line-height: normal;
@@ -620,7 +621,7 @@ body{
 }
 
 .text{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     color: #000;
     text-align: justify;
@@ -636,8 +637,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #2d64c0; */
 
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
     background-image: url(../image/voucher_bg_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
