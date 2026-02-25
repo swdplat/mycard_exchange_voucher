@@ -7,6 +7,14 @@
     white-space: nowrap;
 }
 
+.title_line{
+    font-size: 38px;
+    font-weight: 600;
+    color: #006699;
+    line-height: normal;
+    white-space: nowrap;
+}
+
 .item-text{
     font-size: 38px;
     font-weight: 600;
