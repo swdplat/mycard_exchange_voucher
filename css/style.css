@@ -426,7 +426,7 @@ body{
 }
 
 .info_logo{
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-around;
     white-space: nowrap;
@@ -726,7 +726,7 @@ body{
 }
 
 .info_logo{
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-around;
     white-space: nowrap;
