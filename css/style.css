@@ -605,7 +605,7 @@ body{
 }
 
 .title_line{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: #006699;
     line-height: normal;
@@ -621,7 +621,7 @@ body{
 }
 
 .text{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: #000;
     text-align: justify;
