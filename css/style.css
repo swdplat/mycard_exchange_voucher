@@ -293,6 +293,305 @@ body{
 
 
 /* RWD樣式 開始*/
+@media(max-width:1200px){
+
+/* 文字樣式設定 開始*/
+.headline{
+    font-size: 4.367vw;
+    font-weight: 600;
+    color: #006699;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.title_line{
+    font-size: 38px;
+    font-weight: 600;
+    color: #006699;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.item-text{
+    font-size: 4.367vw;
+    font-weight: 600;
+    color: #000;
+    line-height: normal;
+    align-self: end;
+}
+
+.text{
+    font-size: 26px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    line-height: normal;
+}
+
+.date-nowrap{
+    white-space: nowrap;
+}
+/* 文字樣式設定 結束*/
+
+    body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #2d64c0; */
+
+    background-image: url(../image/voucher_bg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.barcode_outer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.barcode{
+    width: 90%;
+    max-width: 870px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    margin-top: 35px;
+    margin-bottom: 270px;
+}
+
+.barcode::before{
+    content: "";
+    background-image: url(../image/tickets_top.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: -80px;
+}
+
+.barcode::after{
+    content: "";
+    background-image: url(../image/tickets_under.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: -77px;
+}
+
+
+.barcode_info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barcode_info::before{
+    content: "";
+    background-image: url(../image/travel-1.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 250px;
+    width: 180px;
+    position: absolute;
+    left: 98px;
+    top: -180px;
+        transform: rotate(25deg);
+    z-index: -1;
+    display: none;
+}
+
+.info_logo{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.company_logo{
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.company_logo img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.top_title{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: center;
+}
+
+.item-text h1{
+    font-size: 4.367vw;
+    font-weight: 600;
+    color: #000;
+    line-height: normal;
+    align-self: end;
+}
+
+.exchange_prize{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+.exchange_deadline{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+.exchange_ambit{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+.barcode_reader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.barcode_image_outer{
+    width: 100%;
+    text-align: center;
+}
+
+.barcode_image{
+    width: 80%;
+}
+
+.qrcode_image_outer{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.qrcode_image{
+    width: 60%;
+}
+
+
+.instruction{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.instruction::before{
+    content: "";
+    background-image: url(../image/travel-1.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 250px;
+    width: 180px;
+    position: absolute;
+    right: 0px;
+    bottom: -270px;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.instruction::after{
+    content: "";
+    background-image: url(../image/travel-2.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 275px;
+    width: 220px;
+    position: absolute;
+    right: 130px;
+    bottom: -280px;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.instruction_desc{
+    margin-bottom: 10px;
+}
+
+.instruction_note{
+    margin-bottom: 10px;
+}
+
+/* 兌換券虛線樣式 開始*/
+.line_dashed{
+    width: 90%;
+    border-bottom: 3px dashed #d7d7d7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* 兌換券虛線樣式 結束*/
+
+/* 條碼切換樣式 開始*/
+.barcode_reader .change_icon{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.barcode_reader .icon_first{
+    max-width: 30px;
+}
+
+.icon_first img{
+    width: 100%;
+}
+
+.change_divid{
+    height: 60%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.barcode_reader .icon_second{
+    max-width: 30px;
+}
+
+.icon_second img{
+    width: 80%;
+}
+/* 條碼切換樣式 結束*/
+}
+
+
+
 @media(max-width:690px){
 
 /* 文字樣式設定 開始*/
