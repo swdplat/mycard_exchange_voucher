@@ -296,6 +296,14 @@ body{
     white-space: nowrap;
 }
 
+.title_line{
+    font-size: 20px;
+    font-weight: 600;
+    color: #006699;
+    line-height: normal;
+    white-space: nowrap;
+}
+
 .item-text{
     font-size: 4.367vw;
     font-weight: 600;
